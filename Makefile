@@ -100,6 +100,7 @@ $(ROM): arm9 arm7
 		-b $(GAME_ICON) "$(GAME_FULL_TITLE)" \
 		$(NDSTOOL_ARGS) \
 		-n 1623 1 -n1 2296 24 \
+		-z 93FFFB06h -u 00030000 -a 00000038 \
 		-g DSPI
 
 sdimage:
